@@ -13,6 +13,7 @@ PATH = './hosts'
 PLATFORM = ''
 
 URL1 = r'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts'
+URL2 = r'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 # TODO: download hosts file
 def downloadForRequests():
     global PATH
