@@ -42,7 +42,7 @@ def setPath():
 def addMine():
     if PATH == r'/etc/hosts':
         hosts = open(PATH, 'a+')
-        hosts.writelines("127.0.0.1\tBarry")
+        hosts.writelines("127.0.0.1\tLawrence")
         hosts.close()
     else:
         pass
