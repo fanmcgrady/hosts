@@ -10,3 +10,6 @@
 ###  2017年2月4日16:42:16
 UPDATE：
 如果程序对hosts文件没有写权限就会出现下载失败。于是修改了程序，如果没有权限修改系统hosts文件，就将hosts文件保存到当前目录，由用户自行移动到指定位置。
+PS:
+访问网站务必通过https方式，方法是在地址栏手动输入https的前缀，例如： https://www.google.com/ncr   https://www.facebook.com    https://www.twitter.com
+因为http是明文传输数据，用了hosts重定向也是白搭，只有强制用https，才能发挥hosts的作用访问目标网站。
