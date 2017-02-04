@@ -17,7 +17,12 @@ URL2 = r'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 def downloadForRequests():
     global PATH
     r = requests.get(URL1)
-    f = open(PATH, 'w')
+    try:
+        f = open(PATH, 'w')
+    except:
+        PATH = './hosts'
+        f = open(PATH, 'w')
+
     f.write(r.text)
     f.close()
 
