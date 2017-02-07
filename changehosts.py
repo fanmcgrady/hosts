@@ -13,7 +13,7 @@ PLATFORM = ''
 
 URL1 = r'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts'
 URL2 = r'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
-# TODO: download hosts file
+#  download hosts file
 def downloadForRequests():
     global PATH
     r = requests.get(URL1)
@@ -26,12 +26,12 @@ def downloadForRequests():
     f.write(r.text)
     f.close()
 
-# TODO: judge the platform 
+#  judge the platform 
 def judgePlatForm():
     global PLATFORM
     PLATFORM = platform.system()
 
-# TODO: depend the platform, set the path for the hosts
+#  depend the platform, set the path for the hosts
 def setPath():
     global PLATFORM
     global PATH
