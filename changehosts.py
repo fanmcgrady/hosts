@@ -63,7 +63,7 @@ def main():
     set_path()
     download_for_requests()
     add_hostname()
-    print ("finish")
+    print ("finish.")
 
 if __name__=='__main__':
     main()
