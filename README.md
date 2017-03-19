@@ -13,3 +13,8 @@ UPDATE：
 PS:  
 访问网站务必通过https方式，方法是在地址栏手动输入https的前缀，例如： https://www.google.com/ncr   https://www.facebook.com    https://www.twitter.com  
 因为http是明文传输数据，用了hosts重定向也是白搭，只有强制用https，才能发挥hosts的作用访问目标网站。  
+
+### 2017年3月19日21:48:31
+UPDATE:
+使用 **Pyinstaller**打包脚本为**windows**可执行程序， 在没有python环境的时候可以直接双击exe文件即可。
+另：如果使用此程序之后仍无法上网，请检查本程序是否已经修改**hosts**文件，若未修改，请确认该程序有修改**hosts**文件的权限。
