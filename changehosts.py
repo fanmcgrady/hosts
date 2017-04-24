@@ -21,6 +21,7 @@ def download_for_requests():
     try:
         f = open(PATH, 'w')
     except:
+        print("please move hosts file to %s \n"% PATH)
         PATH = './hosts'
         f = open(PATH, 'w')
 
