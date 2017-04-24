@@ -8,11 +8,12 @@
 import requests
 import platform
 
+
 PATH = './hosts'
 PLATFORM = ''
-
 URL1 = r'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts'
-URL2 = r'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
+
+
 #  download hosts file
 def download_for_requests():
     global PATH
@@ -45,10 +46,10 @@ def set_path():
         pass
     
 
-# add hostname to /etc/hosts or when use `sudo xxx` will wait for long time
+# add hostname to /etc/hosts otherwise when use `sudo xxx` will wait for long time
 def add_hostname():
-    global PATH
-    if PATH == r'/etc/hosts':
+    global PLATFORM
+    if PLATFORM == 'Linux':
         hostname_file = open('/etc/hostname', 'r')
         hostname = hostname_file.read()
         hostname_file.close()
@@ -63,7 +64,7 @@ def main():
     set_path()
     download_for_requests()
     add_hostname()
-    print ("finish.")
+    print("Enjoy your freedom :) ")
 
 if __name__=='__main__':
     main()
