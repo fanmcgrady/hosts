@@ -1,3 +1,5 @@
+### 0x00 项目介绍
+[项目地址](https://github.com/IanSmith123/hosts)
 ### 0x01 工具介绍
 本程序基于python，程序将从[网上](https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts)获取最新的hosts文件替换本地对应文件，达到科学上网的目的。
 
