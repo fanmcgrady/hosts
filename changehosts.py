@@ -11,13 +11,14 @@ import platform
 
 PATH = './hosts'
 PLATFORM = ''
-URL1 = r'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts'
+IPV4 = r'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts'
+IPV6 = r'https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts'
 
 
 #  download hosts file
 def download_for_requests():
     global PATH
-    r = requests.get(URL1)
+    r = requests.get(IPV4)
     try:
         f = open(PATH, 'w')
     except:
