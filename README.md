@@ -39,3 +39,5 @@ $ sudo python changehosts.py
 
 如果使用此程序之后仍无法正常访问上述网站，请检查本程序是否已经修改**hosts**文件，若未修改，请确认该程序有修改**hosts**文件的权限。
 
+### 0x05 update
+2017-5-30 加入Ipv6 hosts文件地址
