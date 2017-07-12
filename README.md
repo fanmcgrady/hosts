@@ -24,8 +24,8 @@
 * 方法二： 配置好python和requests， 然后以管理员权限执行changehosts.py
 
 注意：
-> 部分安全软件可能会阻止修改本机hosts文件，当出现弹框请求时请点击允许
-> 如果不想使用管理员权限运行该程序，请修改`C:\Windows\System32\drivers\etc\hosts`文件权限使当前用户的权限为完全控制
+> 1. 部分安全软件可能会阻止修改本机hosts文件，当出现弹框请求时请点击允许
+> 2. 如果不想使用管理员权限运行该程序，请修改`C:\Windows\System32\drivers\etc\hosts`文件权限使当前用户的权限为完全控制
 
 #### Linux && OS/X:
 程序会修改`/etc/hosts`文件，如原本有重要内容请注意备份
